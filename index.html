@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <script defer src="./app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- START OF MODAL  -->
+   <div class="modal hidden">
+      <button class="btn" id="closeModal">X</button>
+       <h1>How To Play</h1>
+       <ol>
+           <li>1. Click Roll Dice to roll.</li>
+           <li>2. Hit Hold Dice to keep current roll score.</li>
+           <li>3. If you hit 1 you lose your turn and your current roll score will be reset back to 0. </li>
+           <li>4. First player to reach 100 will win.</li>
+       </ol>
+   </div>
+    <!-- END OF MODAL   -->
+    
+    
+    
+    
+    
+    
+    
+    <!-- START OF MAIN PAGE CONTAINER -->
+    <div class="container">
+       <button class="btn" id="howTo">How To Play</button>
+        <div id="diceContainer">
+            <div id="imgCtn">
+                <img src="./img/dice-1.png" alt="dice image" class="dice">
+            </div>
+        </div> 
+        
+        
+        <!-- MAIN PAGE HEADER -->
+        <h1 id="pageHeader">Milestone Game</h1>
+        <!-- START OF GAME CONTAINER -->
+        <main id="gameContainer">
+            <!-- START OF GAME BTN CONTAINER  -->
+            <div id="btnContainer">
+                <!-- GAME BUTTONS -->
+                <button href="#" class="btn btn--roll">Roll Dice</button>
+                <button href="#" class="btn btn--hold">Hold Dice</button>
+                <button href="#" class="btn btn--new">New Game</button>
+            </div>
+            <!-- END OF GAME BTN CONTAINER -->
+            <!-- START OF GAME PLAYER CONTAINER -->
+            <div class="playerContainer">
+                <!-- START OF SINGLE PLAYER -->
+                <section class="player player--0 player--active">
+                    <!-- PLAYER NAME -->
+                    <h2 class="name" id="name--0">Player 1</h2>
+                    <!-- PLAYER SCORE -->
+                    <p class="score" id="score--0">8</p>
+                    <!-- START OF CURRENT PLAYER CONTAINER -->
+                    <div class="currentScore">
+                        <!-- CURRENT PLAYER LABEL -->
+                        <p class="current-label">Current</p>
+                        <!-- CURRENT PLAYER SCORE -->
+                        <p class="current-score" id="current--0">0</p>
+                    </div>
+                    <!-- END OF SINGLE PLAYER -->
+                </section>
+                <!-- START OF SINGLE PLAYER -->
+                <section class="player player--1">
+                    <!-- PLAYER NAME -->
+                    <h2 class="name" id="name--1">Player 2</h2>
+                    <!-- PLAYER SCORE -->
+                    <p class="score" id="score--1">16</p>
+                    <!-- START OF CURRENT PLAYER CONTAINER -->
+                    <div class="currentScore">
+                        <!-- CUURENT PLAYER LABEL -->
+                        <p class="current-label">Current</p>
+                        <!-- CURRENT PLAYER SCORE -->
+                        <p class="current-score" id="current--1">0</p>
+                    </div>
+                    <!-- END OF CURRENT PLAYER CONTAINER -->
+                </section>
+                <!-- END OF SINGLE PLAYER -->
+            </div>
+            <!-- END OF PLAYER CONTAINER -->
+        </main>
+        <!-- END OF GAME CONTAINER -->
+    </div>
+    <div class="over-lay hidden"></div>
+    <!-- END OF MAIN PAGE CONTAINER -->
+    
+
+</body>
+</html>
